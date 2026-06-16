@@ -1,0 +1,47 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1040' height='560' viewBox='0 0 1040 560'>
+<defs>
+<marker id='arrow' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto' markerUnits='strokeWidth'><path d='M0,0 L0,6 L9,3 z' fill='#6B7280'/></marker>
+<filter id='shadow' x='-10%' y='-10%' width='120%' height='120%'><feDropShadow dx='0' dy='2' stdDeviation='2' flood-opacity='0.18'/></filter>
+</defs>
+<rect width='100%' height='100%' fill='white'/>
+<text x='520.0' y='34' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='22' fill='#222' font-weight='700' text-anchor='middle'>CNN 图像分类流程</text>
+<rect x='40' y='210' width='120' height='80' rx='12' fill='#EAF3FF' stroke='#2F80ED' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='40' y='210' width='8' height='80' rx='8' fill='#2F80ED' stroke='#2F80ED' stroke-width='0'/>
+<text x='100.0' y='238' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>图片</text>
+<text x='56' y='265' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>RGB / 灰度</text>
+<line x1='175' y1='250.0' x2='195' y2='250.0' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='210' y='210' width='130' height='80' rx='12' fill='#EAF7F0' stroke='#219653' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='210' y='210' width='8' height='80' rx='8' fill='#219653' stroke='#219653' stroke-width='0'/>
+<text x='275.0' y='238' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>预处理</text>
+<text x='226' y='265' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='226' dy='0'>Resize</tspan>
+<tspan x='226' dy='15.0'>Normalize</tspan>
+</text>
+<line x1='355' y1='250.0' x2='375' y2='250.0' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='390' y='210' width='130' height='80' rx='12' fill='#FFF4E8' stroke='#F2994A' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='390' y='210' width='8' height='80' rx='8' fill='#F2994A' stroke='#F2994A' stroke-width='0'/>
+<text x='455.0' y='238' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>卷积层</text>
+<text x='406' y='265' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>提取局部特征</text>
+<line x1='535' y1='250.0' x2='555' y2='250.0' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='570' y='210' width='130' height='80' rx='12' fill='#F1EEFF' stroke='#7B61FF' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='570' y='210' width='8' height='80' rx='8' fill='#7B61FF' stroke='#7B61FF' stroke-width='0'/>
+<text x='635.0' y='238' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>池化层</text>
+<text x='586' y='265' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>降维</text>
+<line x1='715' y1='250.0' x2='735' y2='250.0' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='750' y='210' width='130' height='80' rx='12' fill='#F4F6F8' stroke='#4F4F4F' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='750' y='210' width='8' height='80' rx='8' fill='#4F4F4F' stroke='#4F4F4F' stroke-width='0'/>
+<text x='815.0' y='238' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>全连接层</text>
+<text x='766' y='265' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>融合特征</text>
+<line x1='895' y1='250.0' x2='910' y2='250.0' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='925' y='210' width='90' height='80' rx='12' fill='#FCEBEC' stroke='#D9342B' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='925' y='210' width='8' height='80' rx='8' fill='#D9342B' stroke='#D9342B' stroke-width='0'/>
+<text x='970.0' y='238' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>输出</text>
+<text x='941' y='265' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>类别概率</text>
+<text x='90' y='360' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='14' fill='#555' font-weight='400' text-anchor='middle'>
+<tspan x='90' dy='0'>输入张量</tspan>
+<tspan x='90' dy='17.5'>[N,C,H,W]</tspan>
+</text>
+<text x='455' y='360' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='14' fill='#555' font-weight='400' text-anchor='middle'>边缘/纹理/局部形状</text>
+<text x='815' y='360' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='14' fill='#555' font-weight='400' text-anchor='middle'>高级语义组合</text>
+<text x='70' y='465' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222222' font-weight='400' text-anchor='start'>核心理解：CNN 前半部分像“特征提取器”，后半部分像“分类器”。训练时二者一起通过反向传播更新。</text>
+</svg>

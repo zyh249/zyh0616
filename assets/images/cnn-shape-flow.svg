@@ -1,0 +1,44 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1000' height='560' viewBox='0 0 1000 560'>
+<defs>
+<marker id='arrow' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto' markerUnits='strokeWidth'><path d='M0,0 L0,6 L9,3 z' fill='#6B7280'/></marker>
+<filter id='shadow' x='-10%' y='-10%' width='120%' height='120%'><feDropShadow dx='0' dy='2' stdDeviation='2' flood-opacity='0.18'/></filter>
+</defs>
+<rect width='100%' height='100%' fill='white'/>
+<text x='500.0' y='34' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='22' fill='#222' font-weight='700' text-anchor='middle'>示例网络中的形状变化</text>
+<rect x='35' y='180' width='120' height='95' rx='12' fill='#EAF3FF' stroke='#2F80ED' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='35' y='180' width='8' height='95' rx='8' fill='#2F80ED' stroke='#2F80ED' stroke-width='0'/>
+<text x='95.0' y='208' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>输入图片</text>
+<text x='51' y='235' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>3×32×32</text>
+<line x1='163' y1='227' x2='197' y2='227' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='205' y='180' width='120' height='95' rx='12' fill='#FFF4E8' stroke='#F2994A' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='205' y='180' width='8' height='95' rx='8' fill='#F2994A' stroke='#F2994A' stroke-width='0'/>
+<text x='265.0' y='208' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>Conv 3×3, 16</text>
+<text x='221' y='235' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>16×32×32</text>
+<line x1='333' y1='227' x2='367' y2='227' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='375' y='180' width='120' height='95' rx='12' fill='#F1EEFF' stroke='#7B61FF' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='375' y='180' width='8' height='95' rx='8' fill='#7B61FF' stroke='#7B61FF' stroke-width='0'/>
+<text x='435.0' y='208' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>MaxPool 2×2</text>
+<text x='391' y='235' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>16×16×16</text>
+<line x1='503' y1='227' x2='537' y2='227' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='545' y='180' width='120' height='95' rx='12' fill='#FFF4E8' stroke='#F2994A' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='545' y='180' width='8' height='95' rx='8' fill='#F2994A' stroke='#F2994A' stroke-width='0'/>
+<text x='605.0' y='208' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>Conv 3×3, 32</text>
+<text x='561' y='235' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>32×16×16</text>
+<line x1='673' y1='227' x2='707' y2='227' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='715' y='180' width='120' height='95' rx='12' fill='#F1EEFF' stroke='#7B61FF' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='715' y='180' width='8' height='95' rx='8' fill='#7B61FF' stroke='#7B61FF' stroke-width='0'/>
+<text x='775.0' y='208' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>MaxPool 2×2</text>
+<text x='731' y='235' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>32×8×8</text>
+<line x1='843' y1='227' x2='877' y2='227' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='885' y='180' width='105' height='95' rx='12' fill='#F4F6F8' stroke='#4F4F4F' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='885' y='180' width='8' height='95' rx='8' fill='#4F4F4F' stroke='#4F4F4F' stroke-width='0'/>
+<text x='937.5' y='208' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>Flatten</text>
+<text x='901' y='235' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>2048</text>
+<line x1='998' y1='227' x2='1032' y2='227' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='1040' y='180' width='105' height='95' rx='12' fill='#FCEBEC' stroke='#D9342B' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='1040' y='180' width='8' height='95' rx='8' fill='#D9342B' stroke='#D9342B' stroke-width='0'/>
+<text x='1092.5' y='208' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>Linear</text>
+<text x='1056' y='235' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>10</text>
+<text x='60' y='385' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='17' fill='#222222' font-weight='700' text-anchor='start'>调试口诀：每经过一层就检查一次张量形状，尤其是 Flatten 前后的维度。</text>
+<text x='60' y='425' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='15' fill='#555' font-weight='400' text-anchor='start'>PyTorch 中可以用 print(x.shape) 或 torchinfo.summary(model, input_size=(1,3,32,32))。</text>
+</svg>

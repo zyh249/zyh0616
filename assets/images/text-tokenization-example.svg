@@ -1,0 +1,23 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1000' height='560' viewBox='0 0 1000 560'>
+<defs>
+<marker id='arrow' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto' markerUnits='strokeWidth'><path d='M0,0 L0,6 L9,3 z' fill='#6B7280'/></marker>
+<filter id='shadow' x='-10%' y='-10%' width='120%' height='120%'><feDropShadow dx='0' dy='2' stdDeviation='2' flood-opacity='0.18'/></filter>
+</defs>
+<rect width='100%' height='100%' fill='white'/>
+<text x='500.0' y='34' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='22' fill='#222' font-weight='700' text-anchor='middle'>分词示例：中文为什么需要分词</text>
+<rect x='70' y='95' width='860' height='80' rx='14' fill='#F9FAFB' stroke='#CBD5E1' stroke-width='1.5' filter='url(#shadow)'/>
+<text x='500' y='143' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='24' fill='#222' font-weight='700' text-anchor='middle'>我在黑马学习人工智能</text>
+<line x1='500' y1='185' x2='500' y2='235' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='185' y='250' width='100' height='55' rx='14' fill='#EAF3FF' stroke='#9CA3AF' stroke-width='1.5'/>
+<text x='235' y='285' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='18' fill='#222' font-weight='700' text-anchor='middle'>我</text>
+<rect x='310' y='250' width='100' height='55' rx='14' fill='#EAF7F0' stroke='#9CA3AF' stroke-width='1.5'/>
+<text x='360' y='285' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='18' fill='#222' font-weight='700' text-anchor='middle'>在</text>
+<rect x='435' y='250' width='100' height='55' rx='14' fill='#FFF4E8' stroke='#9CA3AF' stroke-width='1.5'/>
+<text x='485' y='285' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='18' fill='#222' font-weight='700' text-anchor='middle'>黑马</text>
+<rect x='560' y='250' width='100' height='55' rx='14' fill='#F1EEFF' stroke='#9CA3AF' stroke-width='1.5'/>
+<text x='610' y='285' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='18' fill='#222' font-weight='700' text-anchor='middle'>学习</text>
+<rect x='685' y='250' width='100' height='55' rx='14' fill='#FCEBEC' stroke='#9CA3AF' stroke-width='1.5'/>
+<text x='735' y='285' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='18' fill='#222' font-weight='700' text-anchor='middle'>人工智能</text>
+<text x='500' y='365' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='17' fill='#222222' font-weight='400' text-anchor='middle'>分词把连续文字转成词元序列，词元是后续编码、统计、建模的基础。</text>
+<text x='500' y='420' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='15' fill='#555' font-weight='400' text-anchor='middle'>不同分词方式会影响词表大小、语义粒度和模型效果。</text>
+</svg>

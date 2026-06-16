@@ -1,0 +1,40 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1000' height='560' viewBox='0 0 1000 560'>
+<defs>
+<marker id='arrow' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto' markerUnits='strokeWidth'><path d='M0,0 L0,6 L9,3 z' fill='#6B7280'/></marker>
+<filter id='shadow' x='-10%' y='-10%' width='120%' height='120%'><feDropShadow dx='0' dy='2' stdDeviation='2' flood-opacity='0.18'/></filter>
+</defs>
+<rect width='100%' height='100%' fill='white'/>
+<text x='500.0' y='34' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='22' fill='#222' font-weight='700' text-anchor='middle'>文本生成：从上一个词预测下一个词</text>
+<rect x='40' y='200' width='130' height='90' rx='12' fill='#EAF3FF' stroke='#2F80ED' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='40' y='200' width='8' height='90' rx='8' fill='#2F80ED' stroke='#2F80ED' stroke-width='0'/>
+<text x='105.0' y='228' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>输入种子</text>
+<text x='56' y='255' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>春 风</text>
+<line x1='185' y1='245' x2='220' y2='245' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='200' y='200' width='130' height='90' rx='12' fill='#EAF7F0' stroke='#219653' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='200' y='200' width='8' height='90' rx='8' fill='#219653' stroke='#219653' stroke-width='0'/>
+<text x='265.0' y='228' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>分词编码</text>
+<text x='216' y='255' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>[15, 28]</text>
+<line x1='345' y1='245' x2='380' y2='245' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='360' y='200' width='130' height='90' rx='12' fill='#FFF4E8' stroke='#F2994A' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='360' y='200' width='8' height='90' rx='8' fill='#F2994A' stroke='#F2994A' stroke-width='0'/>
+<text x='425.0' y='228' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>Embedding</text>
+<text x='376' y='255' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>向量序列</text>
+<line x1='505' y1='245' x2='540' y2='245' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='520' y='200' width='130' height='90' rx='12' fill='#F1EEFF' stroke='#7B61FF' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='520' y='200' width='8' height='90' rx='8' fill='#7B61FF' stroke='#7B61FF' stroke-width='0'/>
+<text x='585.0' y='228' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>RNN / LSTM</text>
+<text x='536' y='255' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>隐藏状态</text>
+<line x1='665' y1='245' x2='700' y2='245' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='680' y='200' width='130' height='90' rx='12' fill='#F4F6F8' stroke='#4F4F4F' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='680' y='200' width='8' height='90' rx='8' fill='#4F4F4F' stroke='#4F4F4F' stroke-width='0'/>
+<text x='745.0' y='228' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>Linear + Softmax</text>
+<text x='696' y='255' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>下个词概率</text>
+<line x1='825' y1='245' x2='860' y2='245' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='840' y='200' width='130' height='90' rx='12' fill='#FCEBEC' stroke='#D9342B' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='840' y='200' width='8' height='90' rx='8' fill='#D9342B' stroke='#D9342B' stroke-width='0'/>
+<text x='905.0' y='228' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>采样</text>
+<text x='856' y='255' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>又 / 到 / 起</text>
+<path d='M850 310 C800 390 130 390 105 300' stroke='#6B7280' fill='none' stroke-width='2' marker-end='url(#arrow)' stroke-dasharray='6 6'/>
+<text x='500' y='430' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='18' fill='#222' font-weight='700' text-anchor='middle'>把采样出来的新词接回输入，重复多次，就能生成一段文本。</text>
+<text x='80' y='485' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='15' fill='#555' font-weight='400' text-anchor='start'>温度 temperature 越高，采样越发散；越低，结果越保守。</text>
+</svg>

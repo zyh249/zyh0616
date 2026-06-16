@@ -1,0 +1,60 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1000' height='560' viewBox='0 0 1000 560'>
+<defs>
+<marker id='arrow' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto' markerUnits='strokeWidth'><path d='M0,0 L0,6 L9,3 z' fill='#6B7280'/></marker>
+<filter id='shadow' x='-10%' y='-10%' width='120%' height='120%'><feDropShadow dx='0' dy='2' stdDeviation='2' flood-opacity='0.18'/></filter>
+</defs>
+<rect width='100%' height='100%' fill='white'/>
+<text x='500.0' y='34' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='22' fill='#222' font-weight='700' text-anchor='middle'>BPTT 与梯度问题：时间太长会让训练变难</text>
+<rect x='90' y='190' width='90' height='80' rx='12' fill='#EAF7F0' stroke='#219653' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='90' y='190' width='8' height='80' rx='8' fill='#219653' stroke='#219653' stroke-width='0'/>
+<text x='135.0' y='218' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>h1</text>
+<text x='106' y='245' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>t=1</text>
+<line x1='180' y1='230' x2='225' y2='230' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='225' y='190' width='90' height='80' rx='12' fill='#EAF7F0' stroke='#219653' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='225' y='190' width='8' height='80' rx='8' fill='#219653' stroke='#219653' stroke-width='0'/>
+<text x='270.0' y='218' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>h2</text>
+<text x='241' y='245' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>t=2</text>
+<line x1='315' y1='230' x2='360' y2='230' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='360' y='190' width='90' height='80' rx='12' fill='#EAF7F0' stroke='#219653' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='360' y='190' width='8' height='80' rx='8' fill='#219653' stroke='#219653' stroke-width='0'/>
+<text x='405.0' y='218' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>h3</text>
+<text x='376' y='245' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>t=3</text>
+<line x1='450' y1='230' x2='495' y2='230' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='495' y='190' width='90' height='80' rx='12' fill='#EAF7F0' stroke='#219653' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='495' y='190' width='8' height='80' rx='8' fill='#219653' stroke='#219653' stroke-width='0'/>
+<text x='540.0' y='218' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>h4</text>
+<text x='511' y='245' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>t=4</text>
+<line x1='585' y1='230' x2='630' y2='230' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='630' y='190' width='90' height='80' rx='12' fill='#EAF7F0' stroke='#219653' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='630' y='190' width='8' height='80' rx='8' fill='#219653' stroke='#219653' stroke-width='0'/>
+<text x='675.0' y='218' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>h5</text>
+<text x='646' y='245' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>t=5</text>
+<line x1='720' y1='230' x2='765' y2='230' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='765' y='190' width='90' height='80' rx='12' fill='#EAF7F0' stroke='#219653' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='765' y='190' width='8' height='80' rx='8' fill='#219653' stroke='#219653' stroke-width='0'/>
+<text x='810.0' y='218' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>h6</text>
+<text x='781' y='245' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>t=6</text>
+<path d='M840 160 C650 90 360 90 130 160' stroke='#D9342B' fill='none' stroke-width='2' marker-end='url(#arrow)' stroke-dasharray='8 6'/>
+<text x='500' y='100' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='17' fill='#D9342B' font-weight='700' text-anchor='middle'>损失从最后一步往前传播梯度</text>
+<rect x='75' y='350' width='240' height='115' rx='12' fill='#FCEBEC' stroke='#D9342B' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='75' y='350' width='8' height='115' rx='8' fill='#D9342B' stroke='#D9342B' stroke-width='0'/>
+<text x='195.0' y='378' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>梯度消失</text>
+<text x='91' y='405' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='91' dy='0'>长序列反传时，多次相乘的梯度可能越</tspan>
+<tspan x='91' dy='15.0'>来越小，早期时间步几乎学不到。</tspan>
+</text>
+<rect x='380' y='350' width='240' height='115' rx='12' fill='#FFF4E8' stroke='#F2994A' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='380' y='350' width='8' height='115' rx='8' fill='#F2994A' stroke='#F2994A' stroke-width='0'/>
+<text x='500.0' y='378' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>梯度爆炸</text>
+<text x='396' y='405' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='396' dy='0'>多次相乘也可能越来越大，导致参数剧</tspan>
+<tspan x='396' dy='15.0'>烈震荡。可用梯度裁剪缓解。</tspan>
+</text>
+<rect x='685' y='350' width='240' height='115' rx='12' fill='#EAF3FF' stroke='#2F80ED' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='685' y='350' width='8' height='115' rx='8' fill='#2F80ED' stroke='#2F80ED' stroke-width='0'/>
+<text x='805.0' y='378' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>LSTM / GRU</text>
+<text x='701' y='405' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='701' dy='0'>通过门控结构控制信息保留和遗忘，适</tspan>
+<tspan x='701' dy='15.0'>合更长依赖。</tspan>
+</text>
+</svg>

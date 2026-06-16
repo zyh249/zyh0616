@@ -1,0 +1,60 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1060' height='590' viewBox='0 0 1060 590'>
+<defs>
+<marker id='arrow' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto' markerUnits='strokeWidth'><path d='M0,0 L0,6 L9,3 z' fill='#6B7280'/></marker>
+<filter id='shadow' x='-10%' y='-10%' width='120%' height='120%'><feDropShadow dx='0' dy='2' stdDeviation='2' flood-opacity='0.18'/></filter>
+</defs>
+<rect width='100%' height='100%' fill='white'/>
+<text x='530.0' y='34' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='22' fill='#222' font-weight='700' text-anchor='middle'>后续项目实践路线：从能跑通到能优化</text>
+<rect x='35' y='170' width='145' height='105' rx='12' fill='#EAF3FF' stroke='#2F80ED' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='35' y='170' width='8' height='105' rx='8' fill='#2F80ED' stroke='#2F80ED' stroke-width='0'/>
+<text x='107.5' y='198' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>1 数据准备</text>
+<text x='51' y='225' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='51' dy='0'>整理数据集</tspan>
+<tspan x='51' dy='15.0'>划分 train/v</tspan>
+<tspan x='51' dy='15.0'>al/test</tspan>
+</text>
+<line x1='193' y1='222' x2='225' y2='222' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='205' y='170' width='145' height='105' rx='12' fill='#EAF7F0' stroke='#219653' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='205' y='170' width='8' height='105' rx='8' fill='#219653' stroke='#219653' stroke-width='0'/>
+<text x='277.5' y='198' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>2 基线模型</text>
+<text x='221' y='225' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='221' dy='0'>先跑通简单模型</tspan>
+<tspan x='221' dy='15.0'>记录指标</tspan>
+</text>
+<line x1='363' y1='222' x2='395' y2='222' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='375' y='170' width='145' height='105' rx='12' fill='#FFF4E8' stroke='#F2994A' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='375' y='170' width='8' height='105' rx='8' fill='#F2994A' stroke='#F2994A' stroke-width='0'/>
+<text x='447.5' y='198' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>3 结构优化</text>
+<text x='391' y='225' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='391' dy='0'>CNN/RNN/LS</tspan>
+<tspan x='391' dy='15.0'>TM</tspan>
+<tspan x='391' dy='15.0'>调整层数与维度</tspan>
+</text>
+<line x1='533' y1='222' x2='565' y2='222' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='545' y='170' width='145' height='105' rx='12' fill='#F1EEFF' stroke='#7B61FF' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='545' y='170' width='8' height='105' rx='8' fill='#7B61FF' stroke='#7B61FF' stroke-width='0'/>
+<text x='617.5' y='198' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>4 训练优化</text>
+<text x='561' y='225' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='561' dy='0'>学习率、batch</tspan>
+<tspan x='561' dy='15.0'>size</tspan>
+<tspan x='561' dy='15.0'>正则化、增强</tspan>
+</text>
+<line x1='703' y1='222' x2='735' y2='222' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='715' y='170' width='145' height='105' rx='12' fill='#F4F6F8' stroke='#4F4F4F' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='715' y='170' width='8' height='105' rx='8' fill='#4F4F4F' stroke='#4F4F4F' stroke-width='0'/>
+<text x='787.5' y='198' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>5 评估分析</text>
+<text x='731' y='225' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='731' dy='0'>混淆矩阵</tspan>
+<tspan x='731' dy='15.0'>错误样本分析</tspan>
+</text>
+<line x1='873' y1='222' x2='905' y2='222' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='885' y='170' width='145' height='105' rx='12' fill='#FCEBEC' stroke='#D9342B' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='885' y='170' width='8' height='105' rx='8' fill='#D9342B' stroke='#D9342B' stroke-width='0'/>
+<text x='957.5' y='198' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>6 发布文档</text>
+<text x='901' y='225' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='901' dy='0'>README</tspan>
+<tspan x='901' dy='15.0'>结果图与复现实验</tspan>
+</text>
+<text x='70' y='380' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='17' fill='#222222' font-weight='700' text-anchor='start'>推荐顺序：先做图像分类（CNN），再做文本分类（Embedding + RNN/LSTM），最后做文本生成。</text>
+<text x='70' y='425' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='15' fill='#555' font-weight='400' text-anchor='start'>每个项目都要留下：数据说明、模型结构、训练曲线、评估结果、常见错误、下一步优化。</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1000' height='560' viewBox='0 0 1000 560'>
+<defs>
+<marker id='arrow' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto' markerUnits='strokeWidth'><path d='M0,0 L0,6 L9,3 z' fill='#6B7280'/></marker>
+<filter id='shadow' x='-10%' y='-10%' width='120%' height='120%'><feDropShadow dx='0' dy='2' stdDeviation='2' flood-opacity='0.18'/></filter>
+</defs>
+<rect width='100%' height='100%' fill='white'/>
+<text x='500.0' y='34' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='22' fill='#222' font-weight='700' text-anchor='middle'>三类常见文本编码方式</text>
+<rect x='65' y='110' width='250' height='170' rx='12' fill='#EAF3FF' stroke='#2F80ED' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='65' y='110' width='8' height='170' rx='8' fill='#2F80ED' stroke='#2F80ED' stroke-width='0'/>
+<text x='190.0' y='138' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>
+<tspan x='190.0' dy='0'>词频 / Bag-of-</tspan>
+<tspan x='190.0' dy='20.0'>Words</tspan>
+</text>
+<text x='81' y='165' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='81' dy='0'>统计每个词出现次数。</tspan>
+<tspan x='81' dy='15.0'>优点：简单，可解释。</tspan>
+<tspan x='81' dy='15.0'>缺点：稀疏，忽略顺序。</tspan>
+</text>
+<rect x='375' y='110' width='250' height='170' rx='12' fill='#EAF7F0' stroke='#219653' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='375' y='110' width='8' height='170' rx='8' fill='#219653' stroke='#219653' stroke-width='0'/>
+<text x='500.0' y='138' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>TF-IDF</text>
+<text x='391' y='165' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='391' dy='0'>降低常见词权重，</tspan>
+<tspan x='391' dy='15.0'>突出更有区分度的词。</tspan>
+<tspan x='391' dy='15.0'>适合传统机器学习。</tspan>
+</text>
+<rect x='685' y='110' width='250' height='170' rx='12' fill='#FFF4E8' stroke='#F2994A' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='685' y='110' width='8' height='170' rx='8' fill='#F2994A' stroke='#F2994A' stroke-width='0'/>
+<text x='810.0' y='138' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>词嵌入 Embedding</text>
+<text x='701' y='165' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='701' dy='0'>把 token id</tspan>
+<tspan x='701' dy='15.0'>映射为稠密向量。</tspan>
+<tspan x='701' dy='15.0'>可训练，能表达语义相似性。</tspan>
+</text>
+<rect x='90' y='365' width='820' height='90' rx='14' fill='#F9FAFB' stroke='#CBD5E1' stroke-width='1.5' filter='url(#shadow)'/>
+<text x='500' y='407' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='17' fill='#222' font-weight='700' text-anchor='middle'>
+<tspan x='500' dy='0'>选择建议：传统 ML → 词频/TF-IDF；神经网络/RNN → token id + Embedding；预训练模型</tspan>
+<tspan x='500' dy='21.25'>→ 使用对应 tokenizer。</tspan>
+</text>
+</svg>

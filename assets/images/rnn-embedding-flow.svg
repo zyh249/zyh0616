@@ -1,0 +1,53 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1000' height='560' viewBox='0 0 1000 560'>
+<defs>
+<marker id='arrow' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto' markerUnits='strokeWidth'><path d='M0,0 L0,6 L9,3 z' fill='#6B7280'/></marker>
+<filter id='shadow' x='-10%' y='-10%' width='120%' height='120%'><feDropShadow dx='0' dy='2' stdDeviation='2' flood-opacity='0.18'/></filter>
+</defs>
+<rect width='100%' height='100%' fill='white'/>
+<text x='500.0' y='34' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='22' fill='#222' font-weight='700' text-anchor='middle'>词嵌入层：把词元 ID 映射为向量</text>
+<rect x='50' y='160' width='150' height='95' rx='12' fill='#EAF3FF' stroke='#2F80ED' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='50' y='160' width='8' height='95' rx='8' fill='#2F80ED' stroke='#2F80ED' stroke-width='0'/>
+<text x='125.0' y='188' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>原始文本</text>
+<text x='66' y='215' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>我 喜欢 人工智能</text>
+<line x1='220' y1='208' x2='295' y2='208' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='295' y='160' width='145' height='95' rx='12' fill='#EAF7F0' stroke='#219653' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='295' y='160' width='8' height='95' rx='8' fill='#219653' stroke='#219653' stroke-width='0'/>
+<text x='367.5' y='188' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>分词 / Token</text>
+<text x='311' y='215' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='311' dy='0'>[我, 喜欢,</tspan>
+<tspan x='311' dy='15.0'>人工智能]</tspan>
+</text>
+<line x1='460' y1='208' x2='535' y2='208' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='535' y='160' width='135' height='95' rx='12' fill='#FFF4E8' stroke='#F2994A' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='535' y='160' width='8' height='95' rx='8' fill='#F2994A' stroke='#F2994A' stroke-width='0'/>
+<text x='602.5' y='188' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>词表索引</text>
+<text x='551' y='215' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='551' dy='0'>[2, 18,</tspan>
+<tspan x='551' dy='15.0'>305]</tspan>
+</text>
+<line x1='690' y1='208' x2='765' y2='208' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='765' y='140' width='170' height='135' rx='12' fill='#F1EEFF' stroke='#7B61FF' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='765' y='140' width='8' height='135' rx='8' fill='#7B61FF' stroke='#7B61FF' stroke-width='0'/>
+<text x='850.0' y='168' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>Embedding 矩阵</text>
+<text x='781' y='195' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='781' dy='0'>vocab_size</tspan>
+<tspan x='781' dy='15.0'>× embed_dim</tspan>
+<tspan x='781' dy='15.0'>例如 10000 ×</tspan>
+<tspan x='781' dy='15.0'>128</tspan>
+<tspan x='781' dy='15.0'>每个 ID</tspan>
+<tspan x='781' dy='15.0'>取出一行向量</tspan>
+</text>
+<rect x='120' y='335' width='760' height='70' rx='12' fill='#F9FAFB' stroke='#CBD5E1' stroke-width='1.5'/>
+<line x1='140' y1='335' x2='140' y2='405' stroke='#E5E7EB' stroke-width='2'/>
+<line x1='210' y1='335' x2='210' y2='405' stroke='#E5E7EB' stroke-width='2'/>
+<line x1='280' y1='335' x2='280' y2='405' stroke='#E5E7EB' stroke-width='2'/>
+<line x1='350' y1='335' x2='350' y2='405' stroke='#E5E7EB' stroke-width='2'/>
+<line x1='420' y1='335' x2='420' y2='405' stroke='#E5E7EB' stroke-width='2'/>
+<line x1='490' y1='335' x2='490' y2='405' stroke='#E5E7EB' stroke-width='2'/>
+<line x1='560' y1='335' x2='560' y2='405' stroke='#E5E7EB' stroke-width='2'/>
+<line x1='630' y1='335' x2='630' y2='405' stroke='#E5E7EB' stroke-width='2'/>
+<line x1='700' y1='335' x2='700' y2='405' stroke='#E5E7EB' stroke-width='2'/>
+<line x1='770' y1='335' x2='770' y2='405' stroke='#E5E7EB' stroke-width='2'/>
+<text x='500' y='380' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='18' fill='#222' font-weight='700' text-anchor='middle'>输出：形状 [batch_size, seq_len, embed_dim] 的连续向量张量</text>
+<text x='60' y='480' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222222' font-weight='400' text-anchor='start'>Embedding 的参数会在训练中更新，因此相似语义的词可能逐渐靠近。</text>
+</svg>

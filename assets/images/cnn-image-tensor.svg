@@ -1,0 +1,144 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='520' viewBox='0 0 900 520'>
+<defs>
+<marker id='arrow' markerWidth='10' markerHeight='10' refX='9' refY='3' orient='auto' markerUnits='strokeWidth'><path d='M0,0 L0,6 L9,3 z' fill='#6B7280'/></marker>
+<filter id='shadow' x='-10%' y='-10%' width='120%' height='120%'><feDropShadow dx='0' dy='2' stdDeviation='2' flood-opacity='0.18'/></filter>
+</defs>
+<rect width='100%' height='100%' fill='white'/>
+<text x='450.0' y='34' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='22' fill='#222' font-weight='700' text-anchor='middle'>图像如何变成张量：像素、通道与形状</text>
+<rect x='40' y='80' width='170' height='90' rx='12' fill='#EAF3FF' stroke='#2F80ED' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='40' y='80' width='8' height='90' rx='8' fill='#2F80ED' stroke='#2F80ED' stroke-width='0'/>
+<text x='125.0' y='108' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>原始彩色图像</text>
+<text x='56' y='135' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>由很多像素点组成</text>
+<rect x='65' y='190' width='18' height='18' rx='1' fill='#ffb3b3' stroke='white' stroke-width='1'/>
+<rect x='83' y='190' width='18' height='18' rx='1' fill='#b3ffd1' stroke='white' stroke-width='1'/>
+<rect x='101' y='190' width='18' height='18' rx='1' fill='#b3d1ff' stroke='white' stroke-width='1'/>
+<rect x='119' y='190' width='18' height='18' rx='1' fill='#f8e38a' stroke='white' stroke-width='1'/>
+<rect x='137' y='190' width='18' height='18' rx='1' fill='#f1b3ff' stroke='white' stroke-width='1'/>
+<rect x='155' y='190' width='18' height='18' rx='1' fill='#ffb3b3' stroke='white' stroke-width='1'/>
+<rect x='65' y='208' width='18' height='18' rx='1' fill='#b3ffd1' stroke='white' stroke-width='1'/>
+<rect x='83' y='208' width='18' height='18' rx='1' fill='#b3d1ff' stroke='white' stroke-width='1'/>
+<rect x='101' y='208' width='18' height='18' rx='1' fill='#f8e38a' stroke='white' stroke-width='1'/>
+<rect x='119' y='208' width='18' height='18' rx='1' fill='#f1b3ff' stroke='white' stroke-width='1'/>
+<rect x='137' y='208' width='18' height='18' rx='1' fill='#ffb3b3' stroke='white' stroke-width='1'/>
+<rect x='155' y='208' width='18' height='18' rx='1' fill='#b3ffd1' stroke='white' stroke-width='1'/>
+<rect x='65' y='226' width='18' height='18' rx='1' fill='#b3d1ff' stroke='white' stroke-width='1'/>
+<rect x='83' y='226' width='18' height='18' rx='1' fill='#f8e38a' stroke='white' stroke-width='1'/>
+<rect x='101' y='226' width='18' height='18' rx='1' fill='#f1b3ff' stroke='white' stroke-width='1'/>
+<rect x='119' y='226' width='18' height='18' rx='1' fill='#ffb3b3' stroke='white' stroke-width='1'/>
+<rect x='137' y='226' width='18' height='18' rx='1' fill='#b3ffd1' stroke='white' stroke-width='1'/>
+<rect x='155' y='226' width='18' height='18' rx='1' fill='#b3d1ff' stroke='white' stroke-width='1'/>
+<rect x='65' y='244' width='18' height='18' rx='1' fill='#f8e38a' stroke='white' stroke-width='1'/>
+<rect x='83' y='244' width='18' height='18' rx='1' fill='#f1b3ff' stroke='white' stroke-width='1'/>
+<rect x='101' y='244' width='18' height='18' rx='1' fill='#ffb3b3' stroke='white' stroke-width='1'/>
+<rect x='119' y='244' width='18' height='18' rx='1' fill='#b3ffd1' stroke='white' stroke-width='1'/>
+<rect x='137' y='244' width='18' height='18' rx='1' fill='#b3d1ff' stroke='white' stroke-width='1'/>
+<rect x='155' y='244' width='18' height='18' rx='1' fill='#f8e38a' stroke='white' stroke-width='1'/>
+<rect x='65' y='262' width='18' height='18' rx='1' fill='#f1b3ff' stroke='white' stroke-width='1'/>
+<rect x='83' y='262' width='18' height='18' rx='1' fill='#ffb3b3' stroke='white' stroke-width='1'/>
+<rect x='101' y='262' width='18' height='18' rx='1' fill='#b3ffd1' stroke='white' stroke-width='1'/>
+<rect x='119' y='262' width='18' height='18' rx='1' fill='#b3d1ff' stroke='white' stroke-width='1'/>
+<rect x='137' y='262' width='18' height='18' rx='1' fill='#f8e38a' stroke='white' stroke-width='1'/>
+<rect x='155' y='262' width='18' height='18' rx='1' fill='#f1b3ff' stroke='white' stroke-width='1'/>
+<rect x='65' y='280' width='18' height='18' rx='1' fill='#ffb3b3' stroke='white' stroke-width='1'/>
+<rect x='83' y='280' width='18' height='18' rx='1' fill='#b3ffd1' stroke='white' stroke-width='1'/>
+<rect x='101' y='280' width='18' height='18' rx='1' fill='#b3d1ff' stroke='white' stroke-width='1'/>
+<rect x='119' y='280' width='18' height='18' rx='1' fill='#f8e38a' stroke='white' stroke-width='1'/>
+<rect x='137' y='280' width='18' height='18' rx='1' fill='#f1b3ff' stroke='white' stroke-width='1'/>
+<rect x='155' y='280' width='18' height='18' rx='1' fill='#ffb3b3' stroke='white' stroke-width='1'/>
+<text x='95' y='320' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='13' fill='#555' font-weight='400' text-anchor='middle'>H × W 个像素点</text>
+<line x1='225' y1='225' x2='310' y2='225' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='335' y='150' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='359' y='150' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='383' y='150' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='407' y='150' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='431' y='150' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='335' y='174' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='359' y='174' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='383' y='174' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='407' y='174' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='431' y='174' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='335' y='198' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='359' y='198' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='383' y='198' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='407' y='198' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='431' y='198' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='335' y='222' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='359' y='222' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='383' y='222' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='407' y='222' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='431' y='222' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='335' y='246' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='359' y='246' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='383' y='246' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='407' y='246' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<rect x='431' y='246' width='24' height='24' fill='#F87171' stroke='white' stroke-width='1'/>
+<text x='395' y='290' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='15' fill='#222' font-weight='700' text-anchor='middle'>R 通道</text>
+<text x='395' y='316' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#555' font-weight='400' text-anchor='middle'>每个值 0~255</text>
+<rect x='460' y='150' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='484' y='150' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='508' y='150' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='532' y='150' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='556' y='150' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='460' y='174' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='484' y='174' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='508' y='174' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='532' y='174' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='556' y='174' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='460' y='198' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='484' y='198' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='508' y='198' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='532' y='198' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='556' y='198' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='460' y='222' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='484' y='222' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='508' y='222' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='532' y='222' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='556' y='222' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='460' y='246' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='484' y='246' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='508' y='246' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='532' y='246' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<rect x='556' y='246' width='24' height='24' fill='#6EE7B7' stroke='white' stroke-width='1'/>
+<text x='520' y='290' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='15' fill='#222' font-weight='700' text-anchor='middle'>G 通道</text>
+<text x='520' y='316' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#555' font-weight='400' text-anchor='middle'>每个值 0~255</text>
+<rect x='585' y='150' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='609' y='150' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='633' y='150' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='657' y='150' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='681' y='150' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='585' y='174' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='609' y='174' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='633' y='174' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='657' y='174' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='681' y='174' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='585' y='198' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='609' y='198' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='633' y='198' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='657' y='198' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='681' y='198' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='585' y='222' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='609' y='222' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='633' y='222' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='657' y='222' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='681' y='222' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='585' y='246' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='609' y='246' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='633' y='246' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='657' y='246' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<rect x='681' y='246' width='24' height='24' fill='#93C5FD' stroke='white' stroke-width='1'/>
+<text x='645' y='290' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='15' fill='#222' font-weight='700' text-anchor='middle'>B 通道</text>
+<text x='645' y='316' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#555' font-weight='400' text-anchor='middle'>每个值 0~255</text>
+<line x1='700' y1='225' x2='780' y2='225' stroke='#6B7280' stroke-width='2' marker-end='url(#arrow)'/>
+<rect x='735' y='145' width='130' height='160' rx='12' fill='#FFF4E8' stroke='#F2994A' stroke-width='1.5' filter='url(#shadow)'/>
+<rect x='735' y='145' width='8' height='160' rx='8' fill='#F2994A' stroke='#F2994A' stroke-width='0'/>
+<text x='800.0' y='173' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222' font-weight='700' text-anchor='middle'>张量表示</text>
+<text x='751' y='200' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='12' fill='#4B5563' font-weight='400' text-anchor='start'>
+<tspan x='751' dy='0'>常见图片读取：</tspan>
+<tspan x='751' dy='15.0'>HWC =</tspan>
+<tspan x='751' dy='15.0'>高×宽×通道</tspan>
+<tspan x='751' dy='15.0'>深度学习常用：</tspan>
+<tspan x='751' dy='15.0'>CHW =</tspan>
+<tspan x='751' dy='15.0'>通道×高×宽</tspan>
+</text>
+<text x='50' y='470' font-family="Arial, 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size='16' fill='#222222' font-weight='700' text-anchor='start'>理解重点：CNN 不直接“看图片”，而是处理形状为 [C,H,W] 或 [N,C,H,W] 的数字张量。</text>
+</svg>
